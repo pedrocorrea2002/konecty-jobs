@@ -54,8 +54,7 @@ export default function Home() {
 
   return (
       <div>
-        <div className="w-auto h-20 bg-blue-500">
-          <p className="text-4xl w-auto text-center text-black">Mercado dias</p>
+        <div className="w-auto h-14 bg-blue-500 flex items-center">
           <div className="flex flex-row w-auto">
             <p className="mx-4">Categoria</p>
             <select id="category" data-testid="category" className="rounded-lg" onChange={(e) => filtraProduto("categoria",null)}>
