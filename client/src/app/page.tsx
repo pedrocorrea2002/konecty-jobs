@@ -77,7 +77,7 @@ export default function Home() {
             <input type="text" id="search" data-testid="search" className="rounded-lg w-96 text-black" onKeyDown={(e) => filtraProduto("nome",e)}/>
           </div>
         </div>
-        <div className="flex flex-row flex-wrap bg-slate-300">
+        <div className="flex flex-row flex-wrap bg-slate-300 tela_pai">
           {
             data.map((item) => {
               return(

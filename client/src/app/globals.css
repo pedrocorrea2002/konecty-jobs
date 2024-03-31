@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.tela_pai {
+  min-height: calc(100vh - 80px);
+}
