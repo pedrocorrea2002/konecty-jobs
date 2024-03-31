@@ -5,17 +5,19 @@ import { useState, useEffect } from "react"
 import axios from 'axios'
 
 type products = {
-  categoria: String,
-  nome: String,
+  categoria: string,
+  nome: string,
   preco: Number,
-  imagem: String,
-  descricao: String
+  imagem: string,
+  descricao: string
 }
 
 export default function Home() {
   // UseStates
   const [data, setData] = useState<products[]>([])
   const [fullData, setFullData] = useState<products[]>([])
+  let category:any = document.getElementById("category")
+  let search:any = document.getElementById("search")
 
   // Alimentando lista de produtos
   useEffect(() => {
@@ -27,13 +29,9 @@ export default function Home() {
   },[])
 
   //Fazendo o filtro dos produtos conforme a escolha do usuário
-  function filtraProduto(modalidade,e){
-
+  function filtraProduto(modalidade: String,e: {key?: String}){
     //! Se esta função estiver sendo executada pela caixa de pesquisa, garantir que o filtro só será realizado quando a tecla apertada for "Enter"
     if(modalidade == "categoria" || e.key == "Enter"){
-      let category:any = document.getElementById("category")
-      let search:any = document.getElementById("search")
-  
       if(category.value == "" && search.value == ""){
         setData(fullData)
       }
@@ -57,7 +55,7 @@ export default function Home() {
         <div className="w-auto h-14 bg-blue-500 flex items-center">
           <div className="flex flex-row w-auto">
             <p className="mx-4">Categoria</p>
-            <select id="category" data-testid="category" className="rounded-lg" onChange={(e) => filtraProduto("categoria",null)}>
+            <select id="category" data-testid="category" className="rounded-lg" onChange={() => filtraProduto("categoria",{})}>
               <option className="text-black"></option>
               <option className="text-black">Grãos</option>
               <option className="text-black">Laticínios</option>
@@ -73,23 +71,31 @@ export default function Home() {
 
             <p className="ml-10 mr-4">Pesquisar</p>
 
-            <input type="text" id="search" data-testid="search" className="rounded-lg w-96 text-black" onKeyDown={(e) => filtraProduto("nome",e)}/>
+            <input type="text" id="search" data-testid="search" className="rounded-lg w-96 text-black px-1" onKeyDown={(e) => filtraProduto("nome",e)}/>
           </div>
         </div>
-        <div className="flex flex-row flex-wrap bg-slate-300 tela_pai">
-          {
-            data.map((item) => {
-              return(
-                <Product
-                  data-testid="produto"
-                  nome={item.nome}
-                  imagem={item.imagem}
-                  preco={item.preco}
-                  descricao={item.descricao}
-                />
-              )
-            })
-          }
+        <div className="bg-slate-300 tela_pai">
+          <p 
+            className="ms-5"
+            style={{display: (category.value == "" && search.value == "") ? "None" : "Flex"}}
+          >
+              Encontrados {data.length} resultados!
+          </p>
+          <div className="flex flex-row flex-wrap">
+            {
+              data.map((item) => {
+                return(
+                  <Product
+                    data-testid="produto"
+                    nome={item.nome}
+                    imagem={item.imagem}
+                    preco={item.preco}
+                    descricao={item.descricao}
+                  />
+                )
+              })
+            }
+          </div>
         </div>
       </div>
   );
