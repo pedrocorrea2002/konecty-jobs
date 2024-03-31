@@ -54,31 +54,31 @@ export default function Home() {
           <div className="flex flex-row w-auto">
             <p className="mx-4">Categoria</p>
             <select id="category" data-testid="category">
-              <option></option>
-              <option>Grãos</option>
-              <option>Laticínios</option>
-              <option>Proteínas</option>
-              <option>Café da manhã</option>
-              <option>Óleos</option>
-              <option>Frutas</option>
-              <option>Legumes e verduras</option>
-              <option>Bebidas</option>
-              <option>Higiene</option>
-              <option>Iluminação</option>
+              <option className="text-black"></option>
+              <option className="text-black">Grãos</option>
+              <option className="text-black">Laticínios</option>
+              <option className="text-black">Proteínas</option>
+              <option className="text-black">Café da manhã</option>
+              <option className="text-black">Óleos</option>
+              <option className="text-black">Frutas</option>
+              <option className="text-black">Legumes e verduras</option>
+              <option className="text-black">Bebidas</option>
+              <option className="text-black">Higiene</option>
+              <option className="text-black">Iluminação</option>
             </select>
 
             <p className="ml-10 mr-4">Pesquisar</p>
-            <input type="text" id="search" data-testid="search" className="mr-10 w-80"/>
+            <input type="text" id="search" data-testid="search" className="mr-10 w-80 text-black"/>
 
             <input
               type="button"
               value="Buscar"
-              className="w-60 border bg-white cursor-pointer"
+              className="w-60 border bg-white cursor-pointer text-black"
               onClick={filtraProduto}
             />
           </div>
         </div>
-        <div className="flex flex-row flex-wrap">
+        <div className="flex flex-row flex-wrap bg-slate-300">
           {
             data.map((item) => {
               return(
@@ -86,6 +86,7 @@ export default function Home() {
                   data-testid="produto"
                   nome={item.nome}
                   imagem={item.imagem}
+                  preco={item.preco}
                 />
               )
             })

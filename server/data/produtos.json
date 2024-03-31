@@ -2,181 +2,211 @@
     {
       "categoria": "Grãos",
       "nome": "Arroz branco",
-      "preco": 4.32,
-      "imagem":"/images/arroz.jpg"
+      "preco": 8.64,
+      "imagem":"/images/arroz.jpg",
+      "descricao":"Marca Coradini, Tipo 1, pacote de 5Kg, imagem ilustrativa, prazo de validade na embalagem"
     },
     {
       "categoria": "Grãos",
       "nome": "Feijão carioca",
-      "preco": 5.67,
-      "imagem":"/images/feijao.jpg"
+      "preco": 11.34,
+      "imagem":"/images/feijao.jpg",
+      "descricao":"Marca TBCA"
     },
     {
       "categoria": "Laticínios",
       "nome": "Leite integral",
-      "preco": 3.89,
-      "imagem":"/images/leite.jpg"
+      "preco": 7.78,
+      "imagem":"/images/leite.jpg",
+      "descricao":"Marca Aurora, UHT Integral, 1 Litro, contém lactose, 3% de gordura"
     },
     {
       "categoria": "Proteínas",
       "nome": "Ovos",
-      "preco": 8.45,
-      "imagem":"/images/ovos.jpg"
+      "preco": 16.9,
+      "imagem":"/images/ovos.jpg",
+      "descricao":"Marca Mantiqueira, Ovos Jumbo, tamanho família, categoria A, embalagem com 30 unidades"
     },
     {
       "categoria": "Proteínas",
       "nome": "Carne bovina",
       "preco": 36.78,
-      "imagem":"/images/carne.jpg"
+      "imagem":"/images/carne.jpg",
+      "descricao":"Certified Angus Beef, padrões de qualidade, macia, suculenta e saborosa"
     },
     {
       "categoria": "Proteínas",
       "nome": "Frango inteiro",
-      "preco": 9.32,
-      "imagem":"/images/frango.jpg"
+      "preco": 18.64,
+      "imagem":"/images/frango.jpg",
+      "descricao":"Marca Sadia, peso aproximado 2.9 Kg, valor por quilo"
     },
     {
       "categoria": "Café da manhã",
       "nome": "Pão francês",
-      "preco": 5.12,
-      "imagem":"/images/pao.jpg"
+      "preco": 10.24,
+      "imagem":"/images/pao.jpg",
+      "descricao":"Deve ter entre 50 e 60 gramas, sem coberturas ou adição de amidos"
     },
     {
       "categoria": "Café em grãos",
       "nome": "Café moído",
-      "preco": 11.34,
-      "imagem":"/images/cafe.jpg"
+      "preco": 22.68,
+      "imagem":"/images/cafe.jpg",
+      "descricao":"Marca Três Corações"
     },
     {
       "categoria": "Café da manhã",
       "nome": "Açúcar cristal",
-      "preco": 2.98,
-      "imagem":"/images/acucar.jpg"
+      "preco": 5.96,
+      "imagem":"/images/acucar.jpg",
+      "descricao":"Marca Caravelas, Grupo I, Classe Branco, Tipo Cristal, sacarose de cana-de-açúcar"
     },
     {
       "categoria": "Óleos",
       "nome": "Óleo de soja",
-      "preco": 6.54,
-      "imagem":"/images/oleo.jpg"
+      "preco": 13.08,
+      "imagem":"/images/oleo.jpg",
+      "descricao":""
     },
     {
       "categoria": "Laticínios",
       "nome": "Manteiga",
-      "preco": 7.89,
-      "imagem":"/images/manteiga.jpg"
+      "preco": 15.78,
+      "imagem":"/images/manteiga.jpg",
+      "descricao":"Marca Scala, feita 100% do creme do leite, sem conservantes"
     },
     {
       "categoria": "Laticínios",
       "nome": "Queijo",
-      "preco": 28.76,
-      "imagem":"/images/queijo.jpg"
+      "preco": 57.52,
+      "imagem":"/images/queijo.jpg",
+      "descricao":""
     },
     {
       "categoria": "Frutas",
       "nome": "Banana prata",
-      "preco": 3.45,
-      "imagem":"/images/banana.jpg"
+      "preco": 6.9,
+      "imagem":"/images/banana.jpg",
+      "descricao":"Maior volume de vitamina C, ideal para banana frita e vitaminas"
     },
     {
       "categoria": "Frutas",
       "nome": "Maçã fuji",
-      "preco": 6.78,
-      "imagem":"/images/maca.jpg"
+      "preco": 13.56,
+      "imagem":"/images/maca.jpg",
+      "descricao":"Cor vermelha intensa, mais crocante e com acidez marcante."
     },
     {
       "categoria": "Legumes e verduras",
       "nome": "Tomate",
-      "preco": 4.32,
-      "imagem":"/images/tomate.jpg"
+      "preco": 8.64,
+      "imagem":"/images/tomate.jpg",
+      "descricao":"Fresco, colhido pela madrugada e abrigado dos raios solares."
     },
     {
       "categoria": "Legumes e verduras",
       "nome": "Cenoura",
-      "preco": 2.67,
-      "imagem":"/images/cenoura.jpg"
+      "preco": 5.34,
+      "imagem":"/images/cenoura.jpg",
+      "descricao":"Rica em betacaroteno, importante para a visão, pele e mucosas."
     },
     {
       "categoria": "Legumes e verduras",
       "nome": "Alface",
-      "preco": 1.89,
-      "imagem":"/images/alface.jpg"
+      "preco": 3.78,
+      "imagem":"/images/alface.jpg",
+      "descricao":"Verde intenso, grande número de folhas, ótimo sabor e crocância."
     },
     {
       "categoria": "Bebidas",
       "nome": "Cerveja",
-      "preco": 3.45,
-      "imagem":"/images/cerveja.jpg"
+      "preco": 6.9,
+      "imagem":"/images/cerveja.jpg",
+      "descricao":""
     },
     {
       "categoria": "Bebidas",
       "nome": "Refrigerante",
-      "preco": 4.98,
-      "imagem":"/images/cola.jpg"
+      "preco": 9.96,
+      "imagem":"/images/cola.jpg",
+      "descricao":""
     },
     {
       "categoria": "Bebidas",
       "nome": "Suco",
-      "preco": 5.76,
-      "imagem":"/images/suco.jpg"
+      "preco": 11.52,
+      "imagem":"/images/suco.jpg",
+      "descricao":"Suco de maçã natural adoçado com o próprio açúcar presente na fruta."
     },
     {
       "categoria": "Higiene",
       "nome": "Sabão em pó",
-      "preco": 8.54,
-      "imagem":"/images/sabao.jpg"
+      "preco": 17.08,
+      "imagem":"/images/sabao.jpg",
+      "descricao":
     },
     {
       "categoria": "Higiene",
       "nome": "Amaciante",
-      "preco": 2.34,
-      "imagem":"/images/amaciante.jpg"
+      "preco": 4.68,
+      "imagem":"/images/amaciante.jpg",
+      "descricao":""
     },
     {
       "categoria": "Higiene",
       "nome": "Papel higiênico",
-      "preco": 12.45,
-      "imagem":"/images/papel.jpg"
+      "preco": 24.9,
+      "imagem":"/images/papel.jpg",
+      "descricao":""
     },
     {
       "categoria": "Higiene",
       "nome": "Sabonete",
-      "preco": 1.98,
-      "imagem":"/images/sabonete.jpg"
+      "preco": 3.96,
+      "imagem":"/images/sabonete.jpg",
+      "descricao":""
     },
     {
       "categoria": "Higiene",
       "nome": "Shampoo",
-      "preco": 9.76,
-      "imagem":"/images/shampoo.jpg"
+      "preco": 19.52,
+      "imagem":"/images/shampoo.jpg",
+      "descricao":""
     },
     {
       "categoria": "Higiene",
       "nome": "Condicionador",
-      "preco": 10.34,
-      "imagem":"/images/condicionador.jpg"
+      "preco": 20.68,
+      "imagem":"/images/condicionador.jpg",
+      "descricao":""
     },
     {
       "categoria": "Higiene",
       "nome": "Desodorante",
-      "preco": 7.89,
-      "imagem":"/images/desodorante.jpg"
+      "preco": 15.78,
+      "imagem":"/images/desodorante.jpg",
+      "descricao":""
     },
     {
       "categoria": "Higiene",
       "nome": "Pasta de dente",
-      "preco": 4.56,
-      "imagem":"/images/pasta.jpg"
+      "preco": 9.12,
+      "imagem":"/images/pasta.jpg",
+      "descricao":""
     },
     {
       "categoria": "Iluminação",
       "nome": "Lâmpada",
-      "preco": 6.78,
-      "imagem":"/images/lampada.jpg"
+      "preco": 13.56,
+      "imagem":"/images/lampada.jpg",
+      "descricao":""
     },
     {
       "categoria": "Iluminação",
       "nome": "Vela",
-      "preco": 2.34,
-      "imagem":"/images/vela.jpg"
+      "preco": 4.68,
+      "imagem":"/images/vela.jpg",
+      "descricao":""
     }
 ]  
