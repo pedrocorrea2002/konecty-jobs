@@ -8,7 +8,8 @@ type products = {
   categoria: String,
   nome: String,
   preco: Number,
-  imagem: String
+  imagem: String,
+  descricao: String
 }
 
 export default function Home() {
@@ -26,24 +27,28 @@ export default function Home() {
   },[])
 
   //Fazendo o filtro dos produtos conforme a escolha do usuário
-  function filtraProduto(){
-    let category:any = document.getElementById("category")
-    let search:any = document.getElementById("search")
+  function filtraProduto(modalidade,e){
 
-    if(category.value == "" && search.value == ""){
-      setData(fullData)
-    }
-
-    if(category.value != "" && search.value == ""){
-      setData(fullData.filter(a => a.categoria == category.value))
-    }
-
-    if(search.value != ""  && category.value == ""){
-      setData(fullData.filter(a => a.nome.match(search.value)))
-    }
-
-    if(search.value != ""  && category.value != ""){
-      setData(fullData.filter(a => a.nome.toLowerCase().match(search.value.toLowerCase()) && a.categoria == category.value))
+    //! Se esta função estiver sendo executada pela caixa de pesquisa, garantir que o filtro só será realizado quando a tecla apertada for "Enter"
+    if(modalidade == "categoria" || e.key == "Enter"){
+      let category:any = document.getElementById("category")
+      let search:any = document.getElementById("search")
+  
+      if(category.value == "" && search.value == ""){
+        setData(fullData)
+      }
+  
+      if(category.value != "" && search.value == ""){
+        setData(fullData.filter(a => a.categoria == category.value))
+      }
+  
+      if(search.value != ""  && category.value == ""){
+        setData(fullData.filter(a => a.nome.toLowerCase().match(search.value.toLowerCase())))
+      }
+  
+      if(search.value != ""  && category.value != ""){
+        setData(fullData.filter(a => a.nome.toLowerCase().match(search.value.toLowerCase()) && a.categoria == category.value))
+      }
     }
   }
 
@@ -53,7 +58,7 @@ export default function Home() {
           <p className="text-4xl w-auto text-center text-black">Mercado dias</p>
           <div className="flex flex-row w-auto">
             <p className="mx-4">Categoria</p>
-            <select id="category" data-testid="category">
+            <select id="category" data-testid="category" className="rounded-lg" onChange={(e) => filtraProduto("categoria",null)}>
               <option className="text-black"></option>
               <option className="text-black">Grãos</option>
               <option className="text-black">Laticínios</option>
@@ -68,14 +73,8 @@ export default function Home() {
             </select>
 
             <p className="ml-10 mr-4">Pesquisar</p>
-            <input type="text" id="search" data-testid="search" className="mr-10 w-80 text-black"/>
 
-            <input
-              type="button"
-              value="Buscar"
-              className="w-60 border bg-white cursor-pointer text-black"
-              onClick={filtraProduto}
-            />
+            <input type="text" id="search" data-testid="search" className="rounded-lg w-96 text-black" onKeyDown={(e) => filtraProduto("nome",e)}/>
           </div>
         </div>
         <div className="flex flex-row flex-wrap bg-slate-300">
@@ -87,6 +86,7 @@ export default function Home() {
                   nome={item.nome}
                   imagem={item.imagem}
                   preco={item.preco}
+                  descricao={item.descricao}
                 />
               )
             })
