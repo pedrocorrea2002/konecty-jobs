@@ -55,7 +55,12 @@ export default function Home() {
         <div className="w-auto h-14 bg-blue-500 flex items-center">
           <div className="flex flex-row w-auto">
             <p className="mx-4">Categoria</p>
-            <select id="category" data-testid="category" className="rounded-lg" onChange={() => filtraProduto("categoria",{})}>
+            <select
+              id="category"
+              data-testid="category"
+              className="rounded-lg px-1"
+              onChange={() => filtraProduto("categoria",{})}
+            >
               <option className="text-black"></option>
               <option className="text-black">Grãos</option>
               <option className="text-black">Laticínios</option>
